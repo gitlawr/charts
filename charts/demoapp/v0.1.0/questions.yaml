@@ -1,0 +1,13 @@
+minimum_rancher_version: v2.1.0
+questions:
+- variable: service.type
+  default: "ClusterIP"
+  required: true
+  type: enum
+  description: "choose service type"
+  label: Service Type
+  group: "Configurations"
+  options:
+  - "ClusterIP"
+  - "NodePort"
+  - "LoadBalancer"
